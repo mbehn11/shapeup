@@ -4,17 +4,28 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="This is a website with resources on how to get into better shape">
-	<title>Shape Up</title>
+
+	<!--[if lt IE 9]>
+	<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" href="styles/normalize.css">
 	<link rel="stylesheet" href="styles/main.css">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<title>Shape Up</title>
+
 </head>
 <body>
 	<header>
 		<img src="images/shape_up_logo.png" alt="Shape up logo">
-		<h2>Shape Up!</h2>
-		<h3>Find the best fit for you!</h3>
-
+		<div>
+			<h2>Shape Up!</h2>
+			<h3>Find the best fit for you!</h3>
+		</div>
 	</header>
+
 	<main>
+		<section>
 		<h1>Get ready to Shape Up!</h1>
 		<p>How many times have you started a new workout routine or diet? And how many times has it failed to give you the results you want? Now, with the help of this site, you can learn about the exercises and diet that work best for you. We offer personalized programs as well as access to several health and dieting tools. So don't wait! Get started looking and feeling better today.</p>
 
@@ -23,6 +34,7 @@
 		<blockquote>Fitness is about so much more than exercise. It&apos;s a catalyst for positive change, and it affects every aspect of your life.</blockquote>
 		
 		<h2>What we offer</h2>
+		
 		<h3><a href="strength/index.html">Build strong muscles</a></h3>
 		<p>Tired of being tired? Strength training can help you manage or lose weight and increase your metabolism to help you burn more calories. It can also increase bone density and reduce the risk of osteoporosis.</p>
 
@@ -34,18 +46,28 @@
 
 		<h3><a href="diet/index.html">Eat what's right for you</a></h3>
 		<p>Are you really what you eat? Lose weight, gain weight, or just feel great! Maintaining a healthy diet is probably the most important thing you can do to promote overall health.</p>
-
-Additional resources
-<ul>
-Physical activity and health
-Stretching exercises
-Strength training
-Cardiovascular training
-Yoga workout
-</ul>
+		</section>
+<aside>
+<h3>Additional resources</h3>
+	<ul>
+	
+		<li><a href="https://www.who.int/health-topics/physical-activity#tab=tab_1" target="_blank">Physical activity and health</a></li>
+		<li><a href="https://www.self.com/gallery/essential-stretches-slideshow" target="_blank">Stretching exercises</a></li>
+		<li><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/strength-training/art-20046670" target="_blank">Strength training</a></li>
+		<li><a href="https://www.hopkinsmedicine.org/health/wellness-and-prevention/3-kinds-of-exercise-that-boost-heart-health#:~:text=Examples%3A%20Brisk%20walking%2C%20running%2C,per%20week%20of%20moderate%20activity." target="_blank">Cardiovascular training</a></li>
+		<li><a href="https://www.self.com/gallery/power-yoga-workout" target="_blank">Yoga workout</a></li>
+	
+	</ul>
+</aside>
 	</main>
 	<footer>
-		<p>&copy; 2024 Shape Up!</p>
+		<p>&copy; <span id="copyrightyear"></span> Shape Up!</p>
 	</footer>
+
+	<script>
+        const d = new Date();
+        document.getElementById('copyrightyear').innerHTML = d.getFullYear();
+    </script>
+
 </body>
 </html>
