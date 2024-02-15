@@ -61,16 +61,21 @@ aside a {
 }
 
 aside a:link, aside a:visited {
-    color: maroon;
+    color: steelblue;
 }
 
 aside a:hover, aside a:active {
-    color: steelblue;
+    color: maroon;
     text-decoration: underline;
 }
 
+aside h3 {
+    color: maroon;
+    text-align: center;
+}
+
 aside ul {
-    padding-left: 4em;
+    padding-left: 2em;
 }
 
 aside li {
@@ -79,19 +84,14 @@ aside li {
 
 main {
     display: flex;
-    flex-direction: row-reverse;
-}
-
-aside {
-    padding-top: 4em;
 }
 
 section {
     max-width: 70%;
 }
 
-main h2, main h3 {
-    margin: 0 1em 2em;
+main h2 {
+    margin: 0 0 2em;
 }
 
 main p {
