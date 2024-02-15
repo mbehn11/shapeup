@@ -39,6 +39,63 @@ header h2 {
     text-shadow: 5px 5px 10px steelblue;
 }
 
+#nav_menu {
+    border-bottom: 3px solid steelblue;
+    background-color: steelblue;
+}
+
+#nav_menu ul {
+    list-style: none;
+    display: flex;
+    position: relative;
+}
+
+#nav_menu li {
+    width: 20%;
+}
+
+#nav_menu a {
+    text-align: center;
+    display: block;
+    padding: .7em 0;
+    background-color: steelblue;
+    font-weight: bold;
+    color: white;
+}
+
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+
+#nave_menu ul ul li a {
+    text-align: left;
+    padding-left: .25em;
+}
+
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+
+#nav_menu a:hover {
+    background-color: lightsteelblue;
+    color: black;
+}
+
+#nav_list h2 {
+    margin-bottom: 5px;
+}
+
+#nav_list ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
 h1 {
     text-align: center;
 }
@@ -92,6 +149,10 @@ section {
 
 main h2 {
     margin: 0 0 2em;
+}
+
+section h3 {
+    padding-bottom: .25em;
 }
 
 main p {
