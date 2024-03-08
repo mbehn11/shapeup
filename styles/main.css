@@ -227,7 +227,7 @@ footer p {
 
 @media (max-width: 767px) {
     #mobilemenu {
-        display: none;
+        display: block;
     }
     .slicknav_menu {
         background-color: steelblue;
